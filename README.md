@@ -113,10 +113,14 @@ Guardar e ingresar a la dirección pública del proyecto para comprobar que func
 
 ### Instalar MySQL
 
-Asignar una contraseña maestra para MySQL cuando sea solicitado
+Tomado de [https://www.digitalocean.com/community/tutorials/como-instalar-mysql-en-ubuntu-18-04-es](https://www.digitalocean.com/community/tutorials/como-instalar-mysql-en-ubuntu-18-04-es)
+
+Actualice el índice de su paquete, instale el paquete mysql-server y luego ejecute el script de seguridad incluido.
 
 ```sh
-$ sudo apt-get install mysql-server
+$ sudo apt update
+$ sudo apt install mysql-server
+$ sudo mysql_secure_installation
 ```
 
 ### Instalar PHPMyAdmin
